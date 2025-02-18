@@ -183,7 +183,7 @@ function createTraderFile(traderId) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pronox partner</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
@@ -203,8 +203,8 @@ function createTraderFile(traderId) {
             <a id="telegramlink" href="#"><img src="assets/telegram.png"></a>
         </div>
     </div>
-    <script src="../system-script.js"></script>
-    <script src="../script.js"></script>
+    <script src="assets/system-script.js"></script>
+    <script src="assets/script.js"></script>
     <script src="assets/links.js"></script>
     
 
