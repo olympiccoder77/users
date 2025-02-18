@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // لينك متجر pronox
 document.addEventListener("DOMContentLoaded", () => {
-    const link = "#";  // اللينك
+    const link = "https://pronox7.blogspot.com/";  // اللينك
     document.getElementById("pronoxstoreLink").href = link;
 });
 
 // لينك طلب المنتجات
 document.addEventListener("DOMContentLoaded", () => {
-    const link = "3";  // اللينك
+    const link = "https://olympiccoder77.github.io/pronox-orders/";  // اللينك
     document.getElementById("orderform").href = link;
 });
 // لينك سحب الارباح
