@@ -1,1 +1,112 @@
-<h1></h1>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محرك البحث</title>
+    <style>
+        /* استيراد خط جذاب */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🔍 البحث عن الكود</h2>
+        <input type="text" id="searchCode" placeholder="أدخل الكود">
+        <button onclick="searchCode()">بحث</button>
+        <p id="result"></p>
+    </div>
+    <script>
+
+        function searchCode() {
+    let code = document.getElementById("searchCode").value.trim();
+    let result = document.getElementById("result");
+
+    if (code === "") {
+        result.innerText = "❌ يرجى إدخال الكود!";
+        result.style.color = "yellow";
+        return;
+    }
+
+    let filePath = code + ".html"; // تحديد اسم الملف
+
+    // محاولة تحميل الملف
+    fetch(filePath, { method: 'HEAD' }) // فقط نتحقق من وجود الملف بدون تحميله بالكامل
+        .then(response => {
+            if (response.ok) {
+                window.location.href = filePath; // التوجيه للملف إذا كان موجودًا
+            } else {
+                result.innerText = "⚠️ هذا الكود غير صحيح!";
+                result.style.color = "red";
+            }
+        })
+        .catch(() => {
+            result.innerText = "⚠️ هذا الكود غير صحيح!";
+            result.style.color = "red";
+        });
+}
+
+    </script>
+</body>
+</html>
