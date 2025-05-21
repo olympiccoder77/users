@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // لينك متجر pronox
 document.addEventListener("DOMContentLoaded", () => {
-    const link = "https://pronox7.blogspot.com/";  // اللينك
+    const link = "https://pronox.wuiltstore.com/ar";  // اللينك
     document.getElementById("pronoxstoreLink").href = link;
 });
 
 // لينك طلب المنتجات
 document.addEventListener("DOMContentLoaded", () => {
-    const link = "https://olympiccoder77.github.io/pronox-orders/";  // اللينك
+    const link = "https://pronox.wuiltstore.com/ar";  // اللينك
     document.getElementById("orderform").href = link;
 });
 // لينك سحب الارباح
@@ -29,12 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // instagram
 document.addEventListener("DOMContentLoaded", () => {
-    const link = "https://www.instagram.com/pronox.7";  // اللينك
+    const link = "https://www.instagram.com/pronox_official/";  // اللينك
     document.getElementById("instagramlink").href = link;
 });
 
-// telegram
+// tiktok
 document.addEventListener("DOMContentLoaded", () => {
-    const link = "https://t.me/Pronox7";  // اللينك
-    document.getElementById("telegramlink").href = link;
+    const link = "https://www.tiktok.com/@pronox_official";  // اللينك
+    document.getElementById("tiktoklink").href = link;
 });
