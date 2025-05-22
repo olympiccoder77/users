@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // لينك طلب المنتجات
 document.addEventListener("DOMContentLoaded", () => {
-    const link = "https://pronox.wuiltstore.com/ar";  // اللينك
+    const link = "https://docs.google.com/forms/d/e/1FAIpQLScuzixPnQgCL_Q28FUEzX5L78HcWRjtBw4F_i7u6SjupPUtVw/viewform?usp=dialog";  // اللينك
     document.getElementById("orderform").href = link;
 });
 // لينك سحب الارباح
