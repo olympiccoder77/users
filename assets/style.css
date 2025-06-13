@@ -168,3 +168,40 @@ p{
     padding: 12px;
     display:inline-block;
 }
+
+
+
+
+/*زر التنبيهات*/
+.flashing-button {
+      visibility: hidden;    /*للتشغيل و الاطفاء*/
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+      animation: flash 1s infinite; /* تكرار لا نهائي */
+      text-decoration: none;
+      display: block;
+      color: #000;
+      background-color: #29b6ab;
+      margin: 10px 0;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 50px;
+      padding: 10px;
+    }
+
+    @keyframes flash {
+      0%, 100% {
+        background-color: red;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+      }
+      50% {
+        background-color: darkred;
+        box-shadow: 0 0 25px rgba(255, 0, 0, 1);
+      }
+    }
