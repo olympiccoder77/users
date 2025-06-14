@@ -90,6 +90,7 @@ button:hover {
     margin:30px 20px;
 }
 .social-media a{
+    visibility : hidden;
     display: inline-block;
     transition: 0.3s;
 }

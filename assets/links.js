@@ -35,6 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // tiktok
 document.addEventListener("DOMContentLoaded", () => {
-    const link = "https://www.tiktok.com/@pronox_official";  // اللينك
+    const link = "#";  // اللينك
     document.getElementById("tiktoklink").href = link;
 });
