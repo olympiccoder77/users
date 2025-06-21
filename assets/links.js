@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("pronoxstoreLink").href = link;
 });
 
-// لينك طلب المنتجات
+// الاستشارات
 document.addEventListener("DOMContentLoaded", () => {
-    const link = "https://docs.google.com/forms/d/e/1FAIpQLScuzixPnQgCL_Q28FUEzX5L78HcWRjtBw4F_i7u6SjupPUtVw/viewform?usp=dialog";  // اللينك
+    const link = "https://t.me/Pronox_official";  // اللينك
     document.getElementById("orderform").href = link;
 });
 // لينك سحب الارباح
