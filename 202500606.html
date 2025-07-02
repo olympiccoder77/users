@@ -1,37 +1,90 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pronox partner</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>نقلنا موقعنا!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .btn {
+            background-color: #fff;
+            color: #0072ff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #0072ff;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .btn {
+                padding: 10px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-
     <div class="container">
-    <img src="assets/pronox.png" class="the-logo">
-        <h2 style="padding:0 ; margin:0">202500606</h2>
-        <h2 style="padding:0 ; margin:0">Beginner</h2>
-        <p>رصيدك :<span id="currentBalance"> 2000- </span> جنيه</p>
-        <div class="the-links">
-            <!--<a id="partnersstore" href="#" class="link-button">your store</a>-->
-            <a id="pronoxstoreLink" href="#" class="link-button">pronox store</a>
-            <a id="orderform" href="#" class="link-button">للاستشارات</a>
-            <a id="withdraw" href="#" class="link-button">سحب الارباح</a>
-            <a href="assets/courses.html" class="link-button">الكورسات</a>
-            <a href="assets/Alerts.html" class="flashing-button" >تنبيهات</a>
-        </div>
-        <div class="social-media">
-            <a id="facebooklink" href="#"><img src="assets/facebook.png"></a>
-            <a id="instagramlink" href="#"><img src="assets/instagram.png"></a>
-            <a id="tiktoklink" href="#"><img src="assets/tiktok.png"></a>
-        </div>
+        <h1>👋 أهلاً بيك!</h1>
+        <p>عندنا خبر حلو ليك 🎉</p>
+        <p>احنا نقلنا لموقعنا الجديد علشان نقدملك تجربة أحسن وأسرع!</p>
+        <p>🎁 وهدية مننا ليك: <strong>أول شهر اشتراك مجاناً تماماً 💥</strong></p>
+        <p>لو محتاج أي مساعدة في التسجيل، ابعتلنا وهساعدك فوراً 🙌</p>
+        <p>👇 سجّل دلوقتي من اللينك ده:</p>
+        <a href="https://pronox.kesug.com/" class="btn">سجل الآن</a>
     </div>
-    <script src="assets/system-script.js"></script>
-    <script src="assets/script.js"></script>
-    <script src="assets/links.js"></script>
-    
-
 </body>
 </html>

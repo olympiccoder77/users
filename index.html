@@ -1,25 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERROR 404</title>
+    <title>نقلنا موقعنا!</title>
     <style>
-        body{
-            overflow: hidden;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
         }
-        .error{
+
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 700%;
-            position: absolute;
-            display: flex;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 500px;
             width: 100%;
-            height: 100%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .btn {
+            background-color: #fff;
+            color: #0072ff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #0072ff;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .btn {
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="error">ERROR 404</div>
+    <div class="container">
+        <h1>👋 أهلاً بيك!</h1>
+        <p>عندنا خبر حلو ليك 🎉</p>
+        <p>احنا نقلنا لموقعنا الجديد علشان نقدملك تجربة أحسن وأسرع!</p>
+        <p>🎁 وهدية مننا ليك: <strong>أول شهر اشتراك مجاناً تماماً 💥</strong></p>
+        <p>لو محتاج أي مساعدة في التسجيل، ابعتلنا وهساعدك فوراً 🙌</p>
+        <p>👇 سجّل دلوقتي من اللينك ده:</p>
+        <a href="https://pronox.kesug.com/" class="btn">سجل الآن</a>
+    </div>
 </body>
 </html>
